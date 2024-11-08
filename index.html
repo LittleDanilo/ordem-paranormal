@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icone.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <title>Ordem Paranormal</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header--logo-box">
+            <img src="./img/icone.webp" class="header--logo-img">
+        </div>
+        <div class="header--nav-box">
+            <nav class="header--nav">
+                <ul>
+                    <li class="header--nav-item"><a href="#banner">home</a></li>
+                    <li class="header--nav-item"><a href="#introduction">introduction</a></li>
+                    <li class="header--nav-item"><a href="#forest">forest</a></li>
+                    <li class="header--nav-item"><a href="#calamity">calamity</a></li>
+                    <li class="header--nav-item"><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner" id="banner">
+            <div class="banner--container">
+                <h2 class="banner--pre-title">Bem Vindo à</h2>
+                <h1 class="banner--title">Ordem Paranormal</h1>
+            </div>
+        </section>
+        <section class="introduction" id="introduction">
+            <div class="introduction--container">
+                <div class="introduction--text">
+                    <h2>INTRODUÇÃO</h2>
+                    <p>O paranormal não vem para a nossa realidade de maneira fácil... mas perigosos ocultistas tentam enfraquecer a fina Membrana que nos separa de loucuras e terrores indescritíveis.</p>
+                </div>
+                <div class="introduction--media-container">
+                    <div class="introduction--image-box">
+                        <img class="introduction--image" src="./img/icone.webp">
+                    </div>
+                    <div class="introduction--audio-box">
+                        <audio class="introduction--audio" src="./audio/esperanto.mp3" preload="auto" controls></audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forest" id="forest">
+            <div class="forest--container">
+                <h2 class="forest--title">O segredo na floresta</h2>
+                <video width="100%" height="auto" controls>
+                    <source src="./video/forest-secret-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section class="calamity" id="calamity">
+            <div class="calamity--container">
+                <h2 class="calamity--title">Calamidade</h2>
+                <iframe width="80%" height="100%" src="https://www.youtube.com/embed/7B0m7gDd9aY?autoplay=0" class="calamity--video"></iframe>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact--form-container">
+                <h2 class="contact--form-title">Entre em Contato</h2>
+                <form action="#" class="contact--form">
+                    <input type="email" class="contact--form-input" name="email" id="email--input" placeholder="email">
+                    <textarea rows="10" cols="40" class="contact--form-input" name="message" id="message--input" placeholder="message"></textarea>
+                    <button type="submit" class="contact--form-button">enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

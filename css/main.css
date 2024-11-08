@@ -1,0 +1,289 @@
+:root {
+    --theme-color: #0d1d2d;
+    --dark-gray: rgb(14,14,14);
+    --font-color: white;
+    --link-color: #1f6fbe;
+    --padding-pc: 70px 40px;
+    --padding-mobile: 20px 20px;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+    color: var(--font-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 40px;
+    position: fixed;
+    background-color: #0000008a;
+
+    & .header--logo-box {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        & .header--logo-img {
+            width: 15%;
+            height: auto;
+        }
+    }
+
+    & .header--nav-box {
+        padding: 0 40px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+
+        & .header--nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & .header--nav-item, .header--nav-item a {
+            margin: 0 10px;
+            color: var(--font-color);
+            text-decoration: none;
+            list-style: none;
+        }
+
+        & .header--nav-item:hover {
+            & a {
+                color: var(--link-color);
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: var(--padding-pc);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Rubik Glitch", system-ui;
+        font-size: 4rem;
+        font-weight: 400;
+        font-style: normal;
+}
+
+section.banner {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../img/ordem-paranormal-capa.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    & .banner--container {
+        width: 100%;
+        height: 100%;
+        background-color: #0000008a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .banner--pre-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    & .banner--title {
+        margin: 0;
+        padding: 0;
+        font-family: "Rubik Glitch", system-ui;
+        font-size: 7rem;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+section.introduction {
+
+    & .introduction--container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 80%;
+    }
+
+    & .introduction--text {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: var(--padding-pc);
+    }
+
+    & .introduction--media-container {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        & .introduction--image-box {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70 40 70 40;
+            box-sizing: border-box;
+    
+            & .introduction--image {
+                width: 80%;
+                height: auto;
+            }
+        }
+        
+        & .introduction--audio-box {
+            width: 50%;
+            height: 20%;
+
+            & .introduction--audio {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+section.forest {
+    background-color: var(--theme-color);
+
+    & .forest--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section.calamity {
+    & .calamity--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 80%;
+    }
+}
+
+section.contact {
+    background-color: var(--theme-color);
+
+    & .contact--form-container {
+        width: 40%;
+        height: 90%;
+        padding: var(--padding-pc);
+        background-color: var(--dark-gray);
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+
+        & .contact--form {
+            display: flex;
+            width: 70%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & .contact--form-input {
+                width: 100%;
+                height: 30px;
+                background: none;
+                border: none;
+                border-bottom: 1px solid var(--theme-color);
+                color: var(--font-color);
+                resize: none;
+
+                &#message--input {
+                    height: 60px;
+                }
+            }
+
+            & .contact--form-button {
+                width: 100%;
+                height: 30px;
+                background-color: var(--theme-color);
+                border: none;
+                border-radius: 10px;
+                color: var(--font-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 5px;
+    }
+
+    section {
+        height: 50vh;
+        padding: var(--padding-mobile);
+    }
+
+    .introduction--text {
+        padding: var(--padding-mobile);
+    }
+
+    
+
+    .section.contact {
+        padding: var(--padding-mobile);
+
+        & .contact--form-container {
+            padding: var(--padding-mobile);
+            width: 90%;
+            height: 90%;
+        }
+
+        & .contact--form {
+            width: 100%;
+
+            & .contact--form-input {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
